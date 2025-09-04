@@ -1,0 +1,17 @@
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Infrastructure.deps.json
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Infrastructure.dll
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Infrastructure.pdb
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Application.dll
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Domain.dll
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Domain.pdb
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\bin\Debug\net9.0\Hypesoft.Application.pdb
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.csproj.AssemblyReference.cache
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.AssemblyInfoInputs.cache
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.AssemblyInfo.cs
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.csproj.CoreCompileInputs.cache
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.74E4BFA7.Up2Date
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.dll
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\refint\Hypesoft.Infrastructure.dll
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\Hypesoft.Infrastructure.pdb
+E:\hypesoft-challange\backend\Hypesoft.Infrastructure\obj\Debug\net9.0\ref\Hypesoft.Infrastructure.dll
