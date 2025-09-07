@@ -604,11 +604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+      "projectUniqueName": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
       "projectName": "Hypesoft.Domain",
-      "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+      "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
       "packagesPath": "C:\\Users\\pmncm\\.nuget\\packages\\",
-      "outputPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\obj\\",
+      "outputPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pmncm\\AppData\\Roaming\\NuGet\\NuGet.Config"

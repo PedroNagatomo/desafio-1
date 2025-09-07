@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BgAsd2qG7pk=",
+  "dgSpecHash": "U2SGsU8CjBU=",
   "success": true,
-  "projectFilePath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+  "projectFilePath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmncm\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\pmncm\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

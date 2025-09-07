@@ -44,4 +44,21 @@ export function PageHeader({
 
           {showExportButton && (
             <Button variant="outline" onClick={onExportClick}>
-              
+              <Download className="w-4 h-4 mr-2" />
+              Exportar
+            </Button>
+          )}
+
+          {showAddButton && (
+            <Button onClick={onAddClick}>
+              <Plus className="w-4 h-4 mr-2" />
+              Adicionar
+            </Button>
+          )}
+
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}

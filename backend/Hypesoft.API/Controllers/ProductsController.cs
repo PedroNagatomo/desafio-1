@@ -1,18 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Hypesoft.Application.Commands.Products;
-using Hypesoft.Application.DTOs;
-using Hypesoft.Application.Queries.Products;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Hypesoft.Application.Commands.Products;
+using Hypesoft.Application.Queries.Products;
+using Hypesoft.Application.DTOs;
 
 namespace Hypesoft.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 [Produces("application/json")]
+[Authorize(Policy = "UserOrAbove")]
 public class ProductsController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -42,25 +40,27 @@ public class ProductsController : ControllerBase
     }
 
     /// <summary>
+    /// Obtém um produto específico por ID
     /// </summary>
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductDto>> GetProduct(string id, CancellationToken cancellationToken = default)
     {
         var query = new GetProductByIdQuery(id);
         var result = await _mediator.Send(query, cancellationToken);
-
+        
         if (result == null)
             return NotFound(new { Message = $"Product with id '{id}' not found" });
-
+        
         return Ok(result);
     }
 
     /// <summary>
-    /// Cria um novo produto
+    /// Cria um novo produto (apenas Managers e Admins)
     /// </summary>
     [HttpPost]
+    [Authorize(Policy = "ManagerOrAbove")]
     public async Task<ActionResult<ProductDto>> CreateProduct(
-        CreateProductDto dto,
+        CreateProductDto dto, 
         CancellationToken cancellationToken = default)
     {
         var command = new CreateProductCommand(dto);
@@ -69,9 +69,10 @@ public class ProductsController : ControllerBase
     }
 
     /// <summary>
-    /// Atualiza um produto existente
+    /// Atualiza um produto existente (apenas Managers e Admins)
     /// </summary>
     [HttpPut("{id}")]
+    [Authorize(Policy = "ManagerOrAbove")]
     public async Task<ActionResult<ProductDto>> UpdateProduct(
         string id,
         UpdateProductDto dto,
@@ -83,24 +84,26 @@ public class ProductsController : ControllerBase
     }
 
     /// <summary>
-    /// Remove um produto
+    /// Remove um produto (apenas Admins)
     /// </summary>
     [HttpDelete("{id}")]
+    [Authorize(Policy = "AdminOnly")]
     public async Task<ActionResult> DeleteProduct(string id, CancellationToken cancellationToken = default)
     {
         var command = new DeleteProductCommand(id);
         var result = await _mediator.Send(command, cancellationToken);
-
+        
         if (!result)
             return NotFound(new { Message = $"Product with id '{id}' not found" });
-
+        
         return NoContent();
     }
 
     /// <summary>
-    /// Atualiza o estoque de um produto
+    /// Atualiza o estoque de um produto (apenas Managers e Admins)
     /// </summary>
     [HttpPatch("{id}/stock")]
+    [Authorize(Policy = "ManagerOrAbove")]
     public async Task<ActionResult<ProductDto>> UpdateStock(
         string id,
         UpdateStockDto dto,

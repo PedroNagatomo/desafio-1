@@ -3,8 +3,13 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Category, CreateCategoryDto, UpdateCategoryDto } from '@/types';
 import { categoryService } from '@/services/categoryService';
-import { useApiMutation } from '@/hooks/useApi';
+import { useApiMutation } from '@/hooks/useApi.ts';
 import { toast } from 'sonner';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button';
+import { LoadingSpinner } from '@/components/common/LoadingSpinner';
 
 const categorySchema = z.object({
   name: z.string().min(1, 'Nome é obrigatório').max(100, 'Nome muito longo'),

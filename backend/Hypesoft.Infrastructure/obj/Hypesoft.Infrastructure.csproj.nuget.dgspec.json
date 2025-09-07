@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\hypesoft-challange\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj": {}
+    "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj": {
+    "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
+        "projectUniqueName": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
         "projectName": "Hypesoft.Application",
-        "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
+        "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
         "packagesPath": "C:\\Users\\pmncm\\.nuget\\packages\\",
-        "outputPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\obj\\",
+        "outputPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pmncm\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
-                "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj"
+              "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
+                "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
+    "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+        "projectUniqueName": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
         "projectName": "Hypesoft.Domain",
-        "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+        "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
         "packagesPath": "C:\\Users\\pmncm\\.nuget\\packages\\",
-        "outputPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\obj\\",
+        "outputPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pmncm\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -154,14 +154,14 @@
         }
       }
     },
-    "E:\\hypesoft-challange\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj": {
+    "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\hypesoft-challange\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj",
+        "projectUniqueName": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj",
         "projectName": "Hypesoft.Infrastructure",
-        "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj",
+        "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Infrastructure\\Hypesoft.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pmncm\\.nuget\\packages\\",
-        "outputPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Infrastructure\\obj\\",
+        "outputPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pmncm\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -176,11 +176,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj": {
-                "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj"
+              "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj": {
+                "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj"
               },
-              "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
-                "projectPath": "E:\\hypesoft-challange\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj"
+              "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj": {
+                "projectPath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj"
               }
             }
           }
@@ -218,6 +218,10 @@
               "version": "[9.0.8, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[9.0.8, )"
             },

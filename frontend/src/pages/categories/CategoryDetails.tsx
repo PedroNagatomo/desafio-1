@@ -1,6 +1,9 @@
 import { Edit, FolderOpen, Package, Calendar } from 'lucide-react';
 import { Category } from '@/types';
 import { formatDateTime } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface CategoryDetailsProps {
   category: Category;

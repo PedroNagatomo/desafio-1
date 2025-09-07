@@ -1,18 +1,18 @@
+// ===== frontend/src/App.tsx (SEM AUTENTICAÇÃO - TEMPORÁRIO) =====
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'sonner';
 import { Dashboard } from '@/pages/dashboard/Dashboard';
-import { ProductsPage } from '@/pages/products/ProductsPage';
+import { ProductsPage } from '@/pages/dashboard/products/ProductsPage';
 import { CategoriesPage } from '@/pages/categories/CategoriesPage';
 import './index.css';
 
-// Configuração do React Query
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000, // 5 minutos
-      cacheTime: 10 * 60 * 1000, // 10 minutos
+      gcTime: 10 * 60 * 1000, // 10 minutos
       retry: 1,
       refetchOnWindowFocus: false,
     },
@@ -31,8 +31,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/categories" element={<CategoriesPage />} />
-            
-            {/* Rotas futuras */}
+
             <Route path="/reports" element={
               <div className="flex items-center justify-center h-screen">
                 <div className="text-center">
@@ -60,7 +59,6 @@ function App() {
               </div>
             } />
 
-            {/* 404 Page */}
             <Route path="*" element={
               <div className="flex items-center justify-center h-screen">
                 <div className="text-center">
@@ -72,7 +70,6 @@ function App() {
           </Routes>
         </div>
 
-        {/* Toast Notifications */}
         <Toaster
           position="top-right"
           toastOptions={{
@@ -85,7 +82,6 @@ function App() {
           }}
         />
 
-        {/* React Query DevTools (apenas em desenvolvimento) */}
         <ReactQueryDevtools initialIsOpen={false} />
       </Router>
     </QueryClientProvider>

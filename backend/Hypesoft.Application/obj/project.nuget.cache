@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RUx2bDQiH+o=",
+  "dgSpecHash": "hnyxzuLf3L4=",
   "success": true,
-  "projectFilePath": "E:\\hypesoft-challange\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
+  "projectFilePath": "E:\\hypesoft-challange\\desafio-1\\backend\\Hypesoft.Application\\Hypesoft.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmncm\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pmncm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

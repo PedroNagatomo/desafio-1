@@ -8,8 +8,14 @@ import { categoryService, GetCategoriesParams } from '@/services/categoryService
 import { formatDate } from '@/lib/utils';
 import { CategoryForm } from './CategoryForm';
 import { CategoryDetails } from './CategoryDetails';
-import { useApiMutation } from '@/hooks/useApi';
+import { useApiMutation } from '@/hooks/useApi.ts';
 import { toast } from 'sonner';
+import { Badge } from '@/components/ui/badge';
+import { Column, DataTable } from '@/components/common/DataTable';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Button } from '@/components/ui/button';
+import { DialogHeader } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@radix-ui/react-dialog';
 
 export function CategoriesPage() {
   const [params, setParams] = useState<GetCategoriesParams>({
